@@ -3,7 +3,7 @@ from newsapi import NewsApiClient
 
 class NewsData:
     def __init__(self):
-        self.newsapi = NewsApiClient(api_key='f10e794ff2cb4a6085ba5c32b3dc36bc')
+        self.newsapi = NewsApiClient(api_key='')
     
     def fetch_news(self, country):
         everything = self.newsapi.get_everything(q=country)
